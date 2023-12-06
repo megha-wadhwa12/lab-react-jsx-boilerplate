@@ -25,6 +25,23 @@ const imageData = ()=>{
 
 function App() {
   // code here
+
+  let image_array = imageData();
+  console.log("image_array: ", image_array);
+  return (
+    <>
+    <h1 className='Kalvium'>Kalvium Gallery</h1>
+    <div className='parent_div'>
+     { image_array.map((e)=>{
+      return (
+        <img src={e.img} className='image' alt="" />
+      )
+      })}
+      {/* <img src={image_array[0].img} className='image' alt="" />
+      <img src={image_array[1].img} className='image' alt="" /> */}
+    </div>
+    </>
+  )
 }
 
 export default App;

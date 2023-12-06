@@ -1,1 +1,17 @@
 /* add your styles here */
+
+.Kalvium{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.parent_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vh;
+    width: 100vw;
+    height: 100vh;
+}
+.image{
+    width: 100%;
+}
